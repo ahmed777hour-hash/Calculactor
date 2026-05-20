@@ -1,0 +1,53 @@
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.calculator h1 {
+    margin-bottom: 20px;
+    background-color: white;
+}
+.calculator input {
+    width: 92%;
+    padding: 12px;
+    margin-bottom: 15px; /* مسافة ممتازة تحت الشاشة */
+    font-size: 20 px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* تقسيم الأزرار لـ 4 أعمدة متساوية */
+    gap: 10px; /* مسافة ممتازة بين الأزرار */
+    margin-top: 10px;
+}
+/* تنسيق شكل الأزرار نفسها داخل الشبكة */
+.buttons-grid button {
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+/* حركة تفاعلية عند مرور الماوس فوق الزر */
+.buttons-grid button:hover {
+    background-color: #ddd;
+}
+/* تنسيق خاص وقوي لزر الـ Ac ليظهر باللون الأحمر والكتابة البيضاء */
+.buttons-grid button.ac {
+    background-color: #ff1744;
+    color: white;
+    border-color: #b2102f;
+}
+.buttons-grid button.ac:hover {
+    background-color: #b2102f;
+}
